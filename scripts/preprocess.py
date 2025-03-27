@@ -4,6 +4,7 @@ import sys
 import time
 import argparse
 import logging
+import html
 
 from collections import Counter
 from sacremoses import MosesTokenizer
@@ -12,6 +13,7 @@ from itertools import chain
 from nltk.tokenize import sent_tokenize
 import nltk
 nltk.download('punkt')
+nltk.download('punkt_tab')
 
 
 def parse_args():
@@ -75,7 +77,7 @@ def main():
             else:
                 output_tokens.append(args.unk_string)
 
-        output_string = " ".join(output_tokens)
+        output_string = html.unescape(" ".join(output_tokens))
         sys.stdout.write(output_string + "\n")
 
     toc = time.time() - tic

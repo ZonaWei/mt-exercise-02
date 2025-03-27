@@ -9,16 +9,17 @@ tools=$base/tools
 
 mkdir -p $models
 
-num_threads=4
-device=""
+num_threads=8
+
 
 SECONDS=0
 
 (cd $tools/pytorch-examples/word_language_model &&
-    CUDA_VISIBLE_DEVICES=$device OMP_NUM_THREADS=$num_threads python main.py --data $data/grimm \
+    CUDA_VISIBLE_DEVICES=$device OMP_NUM_THREADS=$num_threads python main.py --data $data/cornell \
         --epochs 40 \
         --log-interval 100 \
         --emsize 200 --nhid 200 --dropout 0.5 --tied \
+        --mps \
         --save $models/model.pt
 )
 
