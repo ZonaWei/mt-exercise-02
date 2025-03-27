@@ -45,7 +45,7 @@ with open("$data/cornell/raw/utterances.txt", "w", encoding="utf-8") as f:
 END
 # I changed the file name into 'cornell' and output name from 'tales' into 'utterances' 
 
-# I found there are some HTML entity coding in 'utterance.preprocessed.txt' like '&apos;' '&quot;'  '&amp;'
+# I found there are some HTML entity coding in 'utterance.preprocessed.txt' like `&apos;` `&quot;` `&amp;`
 so I add 'output_string = html.unescape(" ".join(output_tokens))' and 'import HTML' in 'preprocess.py' to avoid HTML entity encodings appear
 
 # Adjusted the data split: 8200 training sentences, 1000 validation, and 1000 test.
