@@ -79,7 +79,7 @@ Generate (sample) some text from a trained model with:
 and generates a line plot that visualizes the performance comparison over epochs.
 
 
-    Command line
+Command line
 # 1. Train 5 models with different dropout values
     ./scripts/train_dropout_experiments.sh
 # 2. Create perplexity table + plot
