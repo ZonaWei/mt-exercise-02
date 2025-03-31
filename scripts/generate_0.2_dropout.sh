@@ -16,8 +16,8 @@ num_threads=8
     CUDA_VISIBLE_DEVICES=$device OMP_NUM_THREADS=$num_threads python generate.py \
         --data $data/cornell \
         --words 200 \
-        --checkpoint $models/model_dropout0.0.pt \
+        --checkpoint $models/model_dropout0.2.pt \
         --temperature 0.7 \
         --mps \
-        --outf $samples/sample_dropout0.0.txt
+        --outf $samples/sample_dropout0.2.txt
 )

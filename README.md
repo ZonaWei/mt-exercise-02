@@ -67,7 +67,7 @@ Generate (sample) some text from a trained model with:
 
     ./scripts/generate.sh
 # In generated.sh file, I changed word length into 200 and temperature 0.7, which may improve the coherence and fluency of the generated text.
-# In the second task, I modify the generate.sh into generate_0.4_dropout.sh and generate_0.0_dropout.sh to see the text generated with different dropout models
+# In the second task, I modify the generate.sh into generate_0.4_dropout.sh and generate_0.2_dropout.sh to see the text generated with different dropout models
 # And the results are in 'samples'file
 
 
@@ -87,7 +87,7 @@ and generates a line plot that visualizes the performance comparison over epochs
 # 3. Generate text from best model (lowest test perplexity)
     ./scripts/generate_0.4_dropout.sh
 # 4. Generate text from worst model (highest test perplexity)
-    ./scripts/generate_0.0_dropout.sh
+    ./scripts/generate_0.2_dropout.sh
 
 
 

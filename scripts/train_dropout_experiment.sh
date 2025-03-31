@@ -28,6 +28,6 @@ for dropout in "${dropouts[@]}"; do
 	> $models/log_dropout${dropout}.txt
 )
 
-echo "✅ Done: dropout=$dropout, time taken: $SECONDS seconds"
+echo "Done: dropout=$dropout, time taken: $SECONDS seconds"
     echo "------------------------------------------------------"
 done
