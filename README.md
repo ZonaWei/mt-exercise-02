@@ -75,11 +75,10 @@ Generate (sample) some text from a trained model with:
 # I modify the python file for it can accepts and additional flag to save the perplexities as a log-file
 
     ./scripts/plot_dropout_results.py
-# This Python script combines the 5 `.tsv` files (each containing validation perplexities from a training run with a different dropout value) into a single CSV table, 
-and generates a line plot that visualizes the performance comparison over epochs.
+# This Python script combines the 5 `.tsv` files (each containing validation perplexities from a training run with a different dropout value) into a single CSV table, and generates a line plot that visualizes the performance comparison over epochs.
 
 
-Command line
+# Command line
 # 1. Train 5 models with different dropout values
     ./scripts/train_dropout_experiments.sh
 # 2. Create perplexity table + plot
